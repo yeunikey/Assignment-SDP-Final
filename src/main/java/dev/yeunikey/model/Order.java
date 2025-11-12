@@ -112,6 +112,7 @@ public class Order implements OrderSubject {
         }
 
         public Order build() {
+            
             if (customerName == null || items.isEmpty()) {
                 throw new IllegalStateException("Customer name and items must be set");
             }
